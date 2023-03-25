@@ -1,0 +1,11 @@
+# here is the documentation to the api we will use:  https://fakestoreapi.com/
+
+try it:
+
+//regular fetch
+fetch('https://fakestoreapi.com/products/1').then(res=>res.json()).then(json=>console.log(json))
+
+//axios
+axios.get('https://fakestoreapi.com/products/1').then(res=>console.log(res))
+            
+            
