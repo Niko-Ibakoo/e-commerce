@@ -1,12 +1,15 @@
-import "./ProductDetails.css";
-import { useState, useEffect } from 'react';
+import "../components/ProductDetails.css";
+import { useState, useEffect, } from 'react';
+import { useParams } from "react-router-dom";
 
-function ProductDetails({ productId: id }) {
+//we should take a look at this function
+function ProductDetails() {
     const [productData, setProductData] = useState(null);
     const [error, setError] = useState(null);
+    const params = useParams()
 
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/${id}`)
+        fetch(`https://fakestoreapi.com/products/${params.id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Someone done fucked up');
@@ -19,6 +22,9 @@ function ProductDetails({ productId: id }) {
 
 
 
+    // we should create a loading component and import it for conditional rendering everytime we need it 
+    // e.g productData ? // do something.. : show <Loading/> I'll show you more about ternary operators and && in React next time
+    // but this is good! 
 
     if (error) {
         return <div>{error}</div>;

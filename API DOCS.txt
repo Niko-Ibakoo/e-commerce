@@ -7,5 +7,21 @@ fetch('https://fakestoreapi.com/products/1').then(res=>res.json()).then(json=>co
 
 //axios
 axios.get('https://fakestoreapi.com/products/1').then(res=>console.log(res))
+
+GET METHODS :
+
+GET
+/products
+GET
+/products/1
+GET
+/products/categories
+GET
+/products/category/jewelery
+GET
+/cart?userId=1
+GET
+/products?limit=5
+
             
             

@@ -1,0 +1,28 @@
+
+.main-container {
+  margin: 1% auto;
+  width: 70%;
+  height: auto;
+  padding: 50px 0px;
+  background-color: rgb(242, 242, 242);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 1%;
+}
+.card {
+  height: auto;
+  border-radius: 10px;
+
+}
+.img-container {
+  height: 200px;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
