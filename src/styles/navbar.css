@@ -10,13 +10,14 @@ nav {
   left: 0;
   z-index: 1;
 }
+
 .search-bar {
   width: 100%;
   position: relative;
   margin-right: 10px;
   z-index: 20;
-
 }
+
 .search-container{
   position: absolute;
   top: 0px;
@@ -27,6 +28,7 @@ nav {
   border-radius: 50%;
   cursor: pointer;
 }
+
 input {
   padding: 7px;
   border-radius: 20px;
@@ -38,27 +40,32 @@ input {
   z-index: 20;
   font-size: 17px;
 }
+
 input:focus{
   outline: none;
 }
+
 .search {
   position: absolute;
   top: 5px;
   right: 5px;
   font-size: 20px;
 }
+
 .user{
   position: absolute;
   font-size: 25px;
   left: 20px;
   color: #fff;
 }
+
 .cart{
   position: absolute;
   font-size: 22px;
   left: 50px;
   color: #fff;
 }
+
 /*responsive*/
 @media only screen and (max-width: 600px) {
 
@@ -73,14 +80,15 @@ input:focus{
     top: 0;
     z-index: 1;
   }
+
   .search-bar {
     width: 100%;
     position: relative;
     transition: .5s;
     margin-right: 10px;
     z-index: 20;
-
   }
+
   input {
     padding: 7px;
     border-radius: 20px;
@@ -92,13 +100,15 @@ input:focus{
     z-index: 20;
     font-size: 17px;
   }
+
   input:focus{
     outline: none;
-}
-  .search {
+  }
 
+  .search {
     font-size: 20px;
   }
+  
   .search-container{
     position: absolute;
     top: 0px;
@@ -108,12 +118,14 @@ input:focus{
     background-color: rgb(237, 237, 237);
     border-radius: 50%;
   }
+
   .user{
     position: absolute;
     font-size: 25px;
     left: 20px;
     color: #fff;
   }
+  
   .cart{
     position: absolute;
     font-size: 22px;

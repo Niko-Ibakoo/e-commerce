@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./styles/navbar.css";
+import "../styles/Navbar.css";
 import { BsCart2 } from "react-icons/bs";
 import { HiUserCircle } from "react-icons/hi2";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaAmazonPay } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
+
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false); // toggle search bar icon
   const smallWidth = window.innerWidth > 700 ? `2%` : `5%`;
