@@ -2,7 +2,7 @@ nav {
   margin: 0 auto;
   width: 70%;
   padding: 2% 0;
-  background-color: rgb(33, 47, 105);
+  background-color: rgb(36, 58, 143);
   display: flex;
   align-items: center;
   position: relative;
@@ -13,14 +13,23 @@ nav {
 .search-bar {
   width: 100%;
   position: relative;
-  transition: .5s;
   margin-right: 10px;
   z-index: 20;
 
 }
+.search-container{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 33px;
+  height: 33px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 50%;
+  cursor: pointer;
+}
 input {
   padding: 7px;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: rgb(237, 237, 237);
   border: none;
   text-indent: 10px;
@@ -74,7 +83,7 @@ input:focus{
   }
   input {
     padding: 7px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgb(237, 237, 237);
     border: none;
     text-indent: 10px;
@@ -87,10 +96,17 @@ input:focus{
     outline: none;
 }
   .search {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+
     font-size: 20px;
+  }
+  .search-container{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    height: 33px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 50%;
   }
   .user{
     position: absolute;
