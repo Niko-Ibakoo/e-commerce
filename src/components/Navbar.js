@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Navbar.css";
+import '../styles/navbar.css'
 import { BsCart2 } from "react-icons/bs";
 import { HiUserCircle } from "react-icons/hi2";
 import { AiOutlineSearch } from "react-icons/ai";

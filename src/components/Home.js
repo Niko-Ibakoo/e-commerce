@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "../styles/Home.css";
+import '../styles/home.css'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
