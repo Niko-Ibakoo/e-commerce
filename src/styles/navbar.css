@@ -65,6 +65,35 @@ input:focus{
   left: 50px;
   color: #fff;
 }
+.dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 8px 12px 25px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 10px 10px;
+  z-index: 40;
+}
+.dropdown-row {
+  min-height: 30px;
+  text-align: start;
+  margin: 2px 0px;
+  text-indent: 30px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: small;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-row:hover {
+  background-color: rgb(227, 227, 227);
+}
 
 /*responsive*/
 @media only screen and (max-width: 600px) {
@@ -85,7 +114,7 @@ input:focus{
     width: 100%;
     position: relative;
     transition: .5s;
-    margin-right: 10px;
+    margin-right: 0;
     z-index: 20;
   }
 
@@ -132,4 +161,37 @@ input:focus{
     left: 50px;
     color: #fff;
   }
+  .dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: auto;
+    max-width: 100%;
+    margin-top: 34px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+  }
+  .dropdown-row {
+    height: 30px;
+    text-align: start;
+    margin: 10px 0px;
+    text-indent: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 13px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .clear{
+    position: absolute;
+    right: 66px;
+    top: 8px;
+    font-size: 15px;
+    color: rgb(159, 159, 159);
+    cursor: pointer;
+  }
+  
 }
