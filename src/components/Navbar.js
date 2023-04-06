@@ -78,7 +78,7 @@ const Navbar = () => {
               })
               .map((item, index) => (
                 <Link
-                  to={"/test/" + item.id}
+                  to={"/product/" + item.id}
                   onClick={() => onSearch(item.title)}
                   key={index}
                   className="dropdown-row"

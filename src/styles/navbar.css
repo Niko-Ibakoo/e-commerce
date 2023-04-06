@@ -1,6 +1,7 @@
 nav {
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
+  max-width: 1500px;
   padding: 1rem 0;
   background-color: rgb(33, 47, 105);
   display: flex;

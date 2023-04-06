@@ -29,7 +29,7 @@ const Home = () => {
           {data.map((item, index) => (
             <div key={index} className="card">
               <div className="img-container">
-                <Link to={'/test/'+ item.id}><img src={item.image} alt="" /></Link>
+                <Link to={'/product/'+ item.id}><img src={item.image} alt="" /></Link>
               </div>
               <div className="txt-container">
                 <p style={{fontWeight:'400'}}>{item.title}</p>

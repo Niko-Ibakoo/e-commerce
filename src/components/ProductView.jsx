@@ -14,10 +14,10 @@ function ProductDetails() {
         error ? console.log(error) : setProductData(response.data);
       });
   }, []);
-
+productData? console.log( true) : console.log(false)
   return (
     <>
-      {productData ?
+      {productData.id ? 
         <div className="product-view">
           <div className="product-image-container">
             <img
