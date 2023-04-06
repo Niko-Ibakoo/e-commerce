@@ -1,5 +1,5 @@
 import "../styles/ProductView.css";
-import { useState, useEffect, } from 'react';
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -14,10 +14,10 @@ function ProductDetails() {
         error ? console.log(error) : setProductData(response.data);
       });
   }, []);
-productData? console.log( true) : console.log(false)
+
   return (
     <>
-      {productData.id ? 
+      {productData.id ? (
         <div className="product-view">
           <div className="product-image-container">
             <img
@@ -32,7 +32,7 @@ productData? console.log( true) : console.log(false)
             <button className="add-to-cart">Add to Cart</button>
           </div>
         </div>
-        : 
+      ) : (
         <div className="product-view">
           <div className="product-image-container skeleton"></div>
           <div className="product-information-skeleton">
@@ -41,7 +41,7 @@ productData? console.log( true) : console.log(false)
             <button className="add-to-cart skeleton">Add to Cart</button>
           </div>
         </div>
-      }
+      )}
     </>
   );
 }
