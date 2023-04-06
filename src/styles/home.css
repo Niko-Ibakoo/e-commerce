@@ -92,13 +92,13 @@ img {
     background-repeat: no-repeat;
   }
 
-  .img-header p,
+  .img-header p >
   h2 {
     font-weight: 500;
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
     color: rgb(222, 222, 222);
   }
-  
+
   #tagline {
     margin-top: 30px;
     font-size: 25px;
