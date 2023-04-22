@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# E-Commerce App Updates
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## cz/user-authentication branch changes
+
+* Be sure to run 'npm install' to download all of the latest dependencies (Express.js, concurrent).
+* Manage your own '.env' file (see '.env.example') & add it to .gitignore!
+* 'npm start' will start both the React development server and the Express.js server.
+
+
 
 ## Available Scripts
 
