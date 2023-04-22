@@ -1,15 +1,26 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import Pages from "./Pages";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <ConditionalNavbar />
       <Pages />
     </BrowserRouter>
   );
+}
+
+function ConditionalNavbar() {
+  const location = useLocation();
+  const excludedRoutes = ['/sign-in', '/create-account', '/complete-your-profile'];
+
+  if (excludedRoutes.includes(location.pathname)) {
+    return null;
+  }
+
+  return <Navbar />;
 }
 
 export default App;
