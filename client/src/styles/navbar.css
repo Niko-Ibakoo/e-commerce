@@ -1,66 +1,69 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(201, 201, 201);
+  opacity: 1; /* Firefox */
+}
 nav {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1500px;
-  padding: 1rem 0;
-  background-color: rgb(33, 47, 105);
+  max-width: 100%;
+  padding: 1rem 25px;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
+  border-top: none;
+  border-bottom: solid 1px rgb(226, 226, 226);
 }
-
+.logo {
+  font-family:'open sans';
+  font-size: 20px;
+  display: flex;
+  gap: 15px;
+}
+.logo-img{
+  width: 30px;
+  height: 30px;
+}
+.nav-icons{
+  display: flex;
+  gap: 15px;
+  color: #000;
+  font-size: 25px;
+}
 .search-bar {
-  width: 100%;
+  max-width: 1300px;
   position: relative;
-  margin-right: 10px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 20;
-}
-
-.search-container{
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 33px;
-  height: 33px;
-  background-color: rgb(237, 237, 237);
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 input {
-  padding: 7px;
-  border-radius: 20px;
-  background-color: rgb(237, 237, 237);
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
   border: none;
   text-indent: 10px;
-  float: right;
-  transition: .5s;
   z-index: 20;
   font-size: 17px;
+  width: 100%;
+  padding: 20px 0px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 82, 0.15);
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
 .search {
-  position: absolute;
-  top: 5px;
-  right: 5px;
   font-size: 20px;
 }
 
-
-
-.cart{
-  position: absolute;
-  font-size: 22px;
-  left: 50px;
-  color: #fff;
-}
 .dropdown {
   position: absolute;
   display: flex;
@@ -68,7 +71,7 @@ input:focus{
   background-color: #ffffff;
   height: auto;
   width: 100%;
-  margin-top: 40px;
+  margin-top: .5%;
   box-shadow: 8px 12px 25px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0 0 10px 10px;
   z-index: 40;
@@ -93,7 +96,6 @@ input:focus{
 
 /*responsive*/
 @media only screen and (max-width: 600px) {
-
   nav {
     margin: 0 auto;
     width: 100%;
@@ -109,7 +111,7 @@ input:focus{
   .search-bar {
     width: 100%;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
     margin-right: 0;
     z-index: 20;
   }
@@ -121,20 +123,20 @@ input:focus{
     border: none;
     text-indent: 10px;
     float: right;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 20;
     font-size: 17px;
   }
 
-  input:focus{
+  input:focus {
     outline: none;
   }
 
   .search {
     font-size: 20px;
   }
-  
-  .search-container{
+
+  .search-container {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -144,14 +146,14 @@ input:focus{
     border-radius: 50%;
   }
 
-  .user{
+  .user {
     position: absolute;
     font-size: 25px;
     left: 20px;
     color: #fff;
   }
-  
-  .cart{
+
+  .cart {
     position: absolute;
     font-size: 22px;
     left: 50px;
@@ -181,7 +183,7 @@ input:focus{
     overflow: scroll;
     white-space: nowrap;
   }
-  .clear{
+  .clear {
     position: absolute;
     right: 66px;
     top: 8px;
@@ -189,5 +191,4 @@ input:focus{
     color: rgb(159, 159, 159);
     cursor: pointer;
   }
-  
 }
