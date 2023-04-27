@@ -19,23 +19,23 @@ nav {
   border-bottom: solid 1px rgb(226, 226, 226);
 }
 .logo {
-  font-family:'open sans';
+  font-family: "open sans";
   font-size: 20px;
   display: flex;
   gap: 15px;
 }
-.logo-img{
+.logo-img {
   width: 30px;
   height: 30px;
 }
-.nav-icons{
+.nav-icons {
   display: flex;
   gap: 15px;
   color: #000;
   font-size: 25px;
 }
 .search-bar {
-  max-width: 1300px;
+  max-width: 70%;
   position: relative;
   margin-top: 40px;
   margin-left: auto;
@@ -71,7 +71,7 @@ input:focus {
   background-color: #ffffff;
   height: auto;
   width: 100%;
-  margin-top: .5%;
+  margin-top: 0.5%;
   box-shadow: 8px 12px 25px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0 0 10px 10px;
   z-index: 40;
@@ -96,69 +96,34 @@ input:focus {
 
 /*responsive*/
 @media only screen and (max-width: 600px) {
-  nav {
-    margin: 0 auto;
-    width: 100%;
-    padding: 2% 0;
-    background-color: rgb(33, 47, 105);
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 0;
-    z-index: 1;
-  }
 
+  nav{
+    padding: 1rem 10px;
+  }
   .search-bar {
-    width: 100%;
+    max-width: 90%;
     position: relative;
-    transition: 0.5s;
-    margin-right: 0;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 20;
   }
-
-  input {
-    padding: 7px;
-    border-radius: 20px;
-    background-color: rgb(237, 237, 237);
-    border: none;
-    text-indent: 10px;
-    float: right;
-    transition: 0.5s;
-    z-index: 20;
-    font-size: 17px;
+  input{
+    font-size: small;
   }
-
   input:focus {
     outline: none;
   }
-
-  .search {
+  .nav-icons {
+    display: flex;
+    gap: 5px;
+    color: #000;
     font-size: 20px;
   }
-
-  .search-container {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 33px;
-    height: 33px;
-    background-color: rgb(237, 237, 237);
-    border-radius: 50%;
+  .logo{
+    gap: 5px;
   }
 
-  .user {
-    position: absolute;
-    font-size: 25px;
-    left: 20px;
-    color: #fff;
-  }
-
-  .cart {
-    position: absolute;
-    font-size: 22px;
-    left: 50px;
-    color: #fff;
-  }
   .dropdown {
     position: absolute;
     display: flex;
@@ -166,7 +131,7 @@ input:focus {
     background-color: #ffffff;
     height: auto;
     max-width: 100%;
-    margin-top: 34px;
+    margin-top: 0px;
     border: none;
     border-radius: 0 0 10px 10px;
   }
