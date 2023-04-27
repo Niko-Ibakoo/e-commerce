@@ -9,7 +9,7 @@ function ProductDetails() {
 
   useEffect(() => {
     axios
-      .get(`https://fakestoreapi.com/products/${params.id}`)
+      .get(`https://api.unsplash.com/photos/${params.id}?client_id=${process.env.REACT_APP_API_KEY}`)
       .then((response, error) => {
         error ? console.log(error) : setProductData(response.data);
       });
@@ -22,7 +22,7 @@ function ProductDetails() {
           <div className="product-image-container">
             <img
               className="product-image"
-              src={productData.image}
+              src={productData.urls.regular}
               alt="This is a product."
             />
           </div>

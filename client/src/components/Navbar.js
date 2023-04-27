@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/navbar.css";
-import { BsCart2 } from "react-icons/bs";
+import { MdOutlineShoppingBag } from "react-icons/md";
 import { HiUserCircle } from "react-icons/hi2";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FaAmazonPay } from "react-icons/fa";
@@ -36,17 +36,19 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <div className="logo">
-          <div className="logo-img">
-            <img src="/genna-logo.png" alt="" />
+        <Link style={{ textDecoration:'none',color:'rgb(43, 43, 43)'}} to={'/'}>
+          <div  className="logo">
+            <div className="logo-img">
+              <img src="/genna-logo.png" alt="" />
+            </div>
+            <strong style={{fontFamily:'cursive'}} >GENNA</strong>
           </div>
-          <strong>GENNA</strong>
-        </div>
+        </Link>
         <div className="nav-icons">
-          <Link style={{ color: "#000" }} to={"/sign-in"}>
+          <Link style={{color: "rgb(43, 43, 43)" }} to={"/sign-in"}>
             <HiUserCircle className="user nav-icon" />
           </Link>
-          <BsCart2 className="cart nav-icon" />
+          <MdOutlineShoppingBag className="cart nav-icon" />
         </div>
       </nav>
       <div className="search-bar">

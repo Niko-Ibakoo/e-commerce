@@ -1,5 +1,6 @@
 # here is the documentation to the api we will use:  https://fakestoreapi.com/
-
+# IMAGES API ACCESS KEY : MgMxyCz9lv7dCJX4gjC-YLXU7byrCFIwcz-8a9AQ3-Q
+# IMAGES API SECRET KEY : YVXGi83T-_O2F6-s_dcnE4day9Zp0EqfAJnJK8v9bVY
 try it:
 
 //regular fetch
